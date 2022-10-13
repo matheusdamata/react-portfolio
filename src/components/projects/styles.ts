@@ -35,6 +35,11 @@ export const ProjectItemImage = styled.img`
   width: 21.875rem;
   height: auto;
   border-radius: 1rem;
+  transition: transform 0.8s;
+
+  &:hover {
+    transform: translate(0.2rem, 0.2rem);
+  }
 `;
 
 export const ProjectItemTextArea = styled.div`
@@ -69,7 +74,12 @@ export const ProjectItemDescription = styled.p`
   color: #333;
 `;
 
-export const ProjectItemButton = styled.button`
+export const ProjectItemButtonArea = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const ProjectItemViewProjectButton = styled.button`
   width: 25%;
   background-color: var(--purple-dark);
   border: 0;
@@ -77,5 +87,28 @@ export const ProjectItemButton = styled.button`
   padding: 0.5rem 0;
   font-weight: 600;
   margin-top: 1rem;
+  margin-right: 1.5rem;
   color: #fff;
+  transition: opacity .5s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`; 
+
+export const ProjectItemViewProjectGitHubButton = styled.button`
+  width: 25%;
+  background-color: transparent;
+  border: 2px solid var(--purple-dark);
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--purple-dark);
+  transition: .5s ease;
+
+  &:hover {
+    background: var(--purple-dark);
+    color: #fff;
+  }
 `;

@@ -9,7 +9,11 @@ const Projects = () => {
     useEffect(() => { if(AllProjects.length > 0) setProjectsData(AllProjects); }, []);
 
     const openProject = (url: string) => {
-        window.open(url, '_blank', 'noopener,noreferrer');
+        window.open(url, '_blank', 'noopener, noreferrer');
+    }
+
+    const openRepository = (url: string) => {
+        window.open(url, '_blank', 'noopener, noreferrer');
     }
  
     return (    
@@ -25,7 +29,10 @@ const Projects = () => {
                             <C.ProjectItemTechnology>Tecnologias usadas: <span>{item.technology}</span></C.ProjectItemTechnology>
                             <C.ProjectItemCategory>{item.category}</C.ProjectItemCategory>
                             <C.ProjectItemDescription>{item.description}</C.ProjectItemDescription>
-                            <C.ProjectItemButton onClick={() => openProject(item.deploy)} >Ver projeto</C.ProjectItemButton>
+                            <C.ProjectItemButtonArea>
+                                <C.ProjectItemViewProjectButton onClick={() => openProject(item.deploy)} >Ver projeto</C.ProjectItemViewProjectButton>
+                                <C.ProjectItemViewProjectGitHubButton onClick={() => openRepository(item.repository)}>Repositório</C.ProjectItemViewProjectGitHubButton>
+                            </C.ProjectItemButtonArea>
                         </C.ProjectItemTextArea>
                     </C.ProjectItem>
                 ))}
