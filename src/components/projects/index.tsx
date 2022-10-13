@@ -8,6 +8,10 @@ const Projects = () => {
 
     useEffect(() => { if(AllProjects.length > 0) setProjectsData(AllProjects); }, []);
 
+    const openProject = (url: string) => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    }
+ 
     return (    
         <C.Container>
             <C.Title>Projetos</C.Title>
@@ -18,8 +22,10 @@ const Projects = () => {
 
                         <C.ProjectItemTextArea>
                             <C.ProjectItemText>{item.title}</C.ProjectItemText>
+                            <C.ProjectItemTechnology>Tecnologias usadas: <span>{item.technology}</span></C.ProjectItemTechnology>
                             <C.ProjectItemCategory>{item.category}</C.ProjectItemCategory>
                             <C.ProjectItemDescription>{item.description}</C.ProjectItemDescription>
+                            <C.ProjectItemButton onClick={() => openProject(item.deploy)} >Ver projeto</C.ProjectItemButton>
                         </C.ProjectItemTextArea>
                     </C.ProjectItem>
                 ))}

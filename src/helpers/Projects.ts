@@ -6,7 +6,9 @@ export type ProjectsType = {
     imageUrl: string;
     title: string;
     category: 'E-commerce' | 'Outros';
+    technology: string;
     description: string;
+    deploy: string;
 }
 
 export const AllProjects: ProjectsType[] = [
@@ -15,12 +17,16 @@ export const AllProjects: ProjectsType[] = [
         imageUrl: GameStoreImage,
         title: 'Game Store',
         category: 'E-commerce',
-        description: 'Projeto e-commerce "GAME STORE" (inspiração através de um proj. do figma), no momento atual o projeto se encontra em 0.7v, com toda sua estrutura visual pronta, função de adicionar ao carrinho completa (faltando sua apresentação/listagem em um modal).'
+        technology: 'ReactJS e Typescript',
+        description: 'Projeto e-commerce "GAME STORE", no momento atual o projeto se encontra em 0.7v, com toda sua estrutura visual pronta, função de adicionar ao carrinho completa (faltando sua apresentação/listagem em um modal).',
+        deploy: 'https://mellifluous-twilight-ce002c.netlify.app/'
     }, {
         id: 2,
         imageUrl: QrCodeImage,
         title: 'Componente de QR Code',
         category: 'Outros',
-        description: 'Exercício feito através do site https://www.frontendmentor.io/, foi concluído em 32 minutos.'
+        technology: 'HTML e CSS',
+        description: 'Exercício feito através do site https://www.frontendmentor.io/, foi concluído em 32 minutos.',
+        deploy: 'https://coruscating-gelato-a1eee9.netlify.app/'
     },
 ]
