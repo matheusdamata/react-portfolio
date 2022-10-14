@@ -9,20 +9,21 @@ export const Container = styled.div`
 
 export const InfoArea = styled.div`
   display: flex;
-  height: 100vh;
-  max-width: 1120px;
+  height: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
 `;
 
 export const InfoImageArea = styled.div`
   display: flex;
-  flex: 0 0 50%;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 5rem;
+  padding: 5rem;
 
   img {
     width: 350px;
@@ -30,16 +31,28 @@ export const InfoImageArea = styled.div`
     border-radius: 50%;
     box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
   }
+
+  @media (max-width: 760px) {
+    padding: 0;
+    padding: 2rem;
+
+    img {
+      width: 275px;
+      height: 275px;
+    }
+  }
 `;
 
 export const InfoTexts = styled.div`
   display: flex;
-  flex: 0 0 50%;
-  padding: 0 15px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   z-index: 5;
+
+  @media (max-width: 760px) {
+    padding: 2rem;
+  }
 `;
 
 export const InfoGreeting = styled.p`

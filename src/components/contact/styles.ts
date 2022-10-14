@@ -2,13 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   height: 100%;
-  width: 1120px;
+  max-width: 1120px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   background-color: var(--background);
   margin: 4rem auto;
+
+  @media (max-width: 960px) {
+    padding: 2rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -21,22 +25,61 @@ export const ContactArea = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 2rem;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 export const ContactAreaText = styled.p`
-    flex: 1;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #5f6f81;
-    margin-top: 3rem;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5f6f81;
+  margin-top: 3rem;
+  margin-right: 1rem;
+
+  @media (max-width: 960px) {
+    margin: 2rem 0;
+  }
+`;
+
+export const ContactAreaBody = styled.div`
+  display: flex;
+  flex: 1;
+  gap: 4rem;
+
+  @media (max-width: 960px) {
+    gap: 1rem;
+  }
+
+  @media (max-width: 460px) {
+    flex-direction: column;
+  }
 `;
 
 export const ContactAreaItem = styled.div`
+  display: flex;
   flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--white);
   border-radius: 50px;
   padding: 2rem;
-  margin: 3rem;
+
+  @media (max-width: 960px) {
+    margin: 2rem;
+  }
+
+  @media (max-width: 760px) {
+    margin: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0;
+  }
 `;
 
 export const ContactAreaItemImage = styled.img`
@@ -45,12 +88,23 @@ export const ContactAreaItemImage = styled.img`
 `;
 
 export const ContactAreaItemTitle = styled.h3`
-    color: #333333;
+  margin-top: 1rem;
+  color: #333333;
 `;
 
 export const ContactAreaItemText = styled.p`
   line-height: 2.5;
   color: #5f6f81;
+
+  @media (max-width: 1036px) {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
 `;
 
 export const ContactAreaItemLink = styled.a`
@@ -72,5 +126,13 @@ export const ContactAreaItemButton = styled.button`
 
   &:hover {
     opacity: 0.7;
+  }
+
+  @media (max-width: 1036px) {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 760px) {
+    font-size: 0.75rem;
   }
 `;

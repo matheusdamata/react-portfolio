@@ -18,6 +18,8 @@ const Contact = () => {
                     Estou disponível para conversar sobre, será um prazer 
                     contribuir nessa inovação!
                 </C.ContactAreaText>
+                    
+                <C.ContactAreaBody>
                 {getContacts.map((item, index) => (
                     <C.ContactAreaItem key={index}>
                         <C.ContactAreaItemImage src={item.icon} alt="Icon image" />
@@ -38,6 +40,7 @@ const Contact = () => {
                         }
                     </C.ContactAreaItem>
                 ))}
+                </C.ContactAreaBody>
             </C.ContactArea>
         </C.Container>
     );

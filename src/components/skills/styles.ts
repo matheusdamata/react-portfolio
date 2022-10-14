@@ -9,6 +9,10 @@ export const Container = styled.section`
     justify-content: center;
     background-color: var(--background);
     margin: 4rem auto;
+
+    @media (max-width: 960px) {
+        padding: 2rem;
+    }
 `;
 
 export const Title = styled.h2`
@@ -18,15 +22,25 @@ export const Title = styled.h2`
 `;
 
 export const IconsArea = styled.div`
-    width: 100%;
     display: grid;
-    flex-direction: row;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4rem;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1rem;
+    align-self: center;
     background-color: var(--white);
     border-radius: 50px;
-    padding: 3rem;
-    margin: 3rem;
+    padding: 2.5rem;
+    margin: 2rem;
+
+    @media (max-width: 960px) {
+        grid-template-columns: repeat(4, 1fr);
+        width: 95%;
+    }
+
+    @media (max-width: 760px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2.5rem;
+        gap: 2rem;
+    }
 `;
 
 export const IconsItem = styled.div`

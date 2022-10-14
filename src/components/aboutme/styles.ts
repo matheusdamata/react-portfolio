@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    height: 100%;
+    width: 100%;
     max-width: 1120px;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,10 @@ export const Container = styled.section`
     justify-content: center;
     background-color: var(--background);
     margin: 4rem auto;
+
+    @media (max-width: 960px) {
+        padding: 2rem;
+    }
 `;
 
 export const Title = styled.h2`
@@ -18,11 +22,10 @@ export const Title = styled.h2`
 `;
 
 export const Article = styled.article`
-    width: 100%;
     background-color: var(--white);
     border-radius: 50px;
+    margin: 2rem;
     padding: 2.5rem;
-    margin: 3rem;
 `;
 
 export const AboutMeText = styled.p`

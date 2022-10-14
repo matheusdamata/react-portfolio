@@ -9,6 +9,10 @@ export const Container = styled.section`
   justify-content: center;
   background-color: var(--background);
   margin: 4rem auto;
+
+  @media (max-width: 960px) {
+        padding: 2rem;
+  }
 `;
 
 export const Title = styled.h2`
@@ -18,17 +22,20 @@ export const Title = styled.h2`
 `;
 
 export const ProjectsArea = styled.div`
-  width: 100%;
   background-color: var(--white);
   border-radius: 50px;
   padding: 2rem;
-  margin: 3rem;
+  margin: 2rem;
 `;
 
 export const ProjectItem = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 2rem;
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
 `;
 
 export const ProjectItemImage = styled.img`
@@ -40,12 +47,20 @@ export const ProjectItemImage = styled.img`
   &:hover {
     transform: translate(0.2rem, 0.2rem);
   }
+
+  @media (max-width: 760px) {
+    width: 100%;
+  }
 `;
 
 export const ProjectItemTextArea = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
+
+  @media (max-width: 760px) {
+    margin: 1rem 0;
+  }
 `;
 
 export const ProjectItemText = styled.h3`
@@ -77,6 +92,11 @@ export const ProjectItemDescription = styled.p`
 export const ProjectItemButtonArea = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const ProjectItemViewProjectButton = styled.button`
@@ -89,10 +109,18 @@ export const ProjectItemViewProjectButton = styled.button`
   margin-top: 1rem;
   margin-right: 1.5rem;
   color: #fff;
-  transition: opacity .5s;
+  transition: .5s;
 
   &:hover {
     opacity: 0.7;
+  }
+
+  @media (max-width: 960px) {
+    width: 70%;
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
   }
 `; 
 
@@ -110,5 +138,13 @@ export const ProjectItemViewProjectGitHubButton = styled.button`
   &:hover {
     background: var(--purple-dark);
     color: #fff;
+  }
+
+  @media (max-width: 960px) {
+    width: 30%;
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
   }
 `;
