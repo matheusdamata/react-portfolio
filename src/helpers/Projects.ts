@@ -1,4 +1,4 @@
-import GameStoreImage from '../assets/projects/gamestore.jpg';
+import GameStoreImage from '../assets/projects/gamestore.png';
 import QrCodeImage from '../assets/projects/qrcode.jpg';
 
 export type ProjectsType = {
