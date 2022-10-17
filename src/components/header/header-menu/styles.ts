@@ -10,13 +10,17 @@ export const Container = styled.div`
 export const Nav = styled.div`
     display: flex;
     width: 100%;
-    padding: 40px;
+    padding: 2.5rem;
     justify-content: space-between;
+
+    @media (max-width: 425px) {
+        padding: 2rem;
+    }
 `;
 
 export const Menu = styled.div`
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -38,4 +42,9 @@ export const MenuLine = styled.div<isPurpleMenuLine>`
 export const Logo = styled.img`
     width: 9.5rem;
     height: auto;
+
+    @media (max-width: 425px) {
+        width: auto;
+        height: 1.875rem;
+    }
 `;

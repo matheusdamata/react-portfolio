@@ -14,7 +14,7 @@ const Skills = () => {
             <C.IconsArea>
                 {iconsData.map((item, index) => (
                     <C.IconsItem key={index}>
-                        <C.IconsItemImage src={item.imageUrl} />
+                        <C.IconsItemImage src={item.imageUrl} alt="Skill image" />
                         <C.IconsItemTitle>{item.title}</C.IconsItemTitle>
                     </C.IconsItem>
                 ))}

@@ -10,8 +10,17 @@ export const Container = styled.section`
     background-color: var(--background);
     margin: 4rem auto;
 
-    @media (max-width: 960px) {
+    @media (min-width: 769px) and (max-width: 1140px) {
         padding: 2rem;
+    }
+
+    @media (min-width: 426px) and (max-width: 769px) {
+        padding: 2rem;
+    }
+
+    @media (max-width: 425px) {
+        padding: 0 2rem;
+        margin: 0;
     }
 `;
 
@@ -19,6 +28,19 @@ export const Title = styled.h2`
     font-size: 1.6rem;
     font-weight: 400;
     color: #333333;
+
+    @media (min-width: 769px) and (max-width: 1140px) {
+        padding: 2rem;
+    }
+
+    @media (min-width: 426px) and (max-width: 769px) {
+        padding: 2rem;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 1.35rem;
+        padding: 2rem 0;
+    }
 `;
 
 export const IconsArea = styled.div`
@@ -31,15 +53,20 @@ export const IconsArea = styled.div`
     padding: 2.5rem;
     margin: 2rem;
 
-    @media (max-width: 960px) {
+    @media (min-width: 769px) and (max-width: 1140px) {
         grid-template-columns: repeat(4, 1fr);
-        width: 95%;
+        gap: 3rem;
     }
 
-    @media (max-width: 760px) {
+    @media (min-width: 426px) and (max-width: 769px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+
+    @media (max-width: 425px) {
         grid-template-columns: repeat(2, 1fr);
-        padding: 2.5rem;
-        gap: 2rem;
+        gap: 3rem;
+        margin: 0;
     }
 `;
 

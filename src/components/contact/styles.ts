@@ -10,15 +10,36 @@ export const Container = styled.section`
   background-color: var(--background);
   margin: 4rem auto;
 
-  @media (max-width: 960px) {
-    padding: 2rem;
-  }
+  @media (min-width: 769px) and (max-width: 1140px) {
+        padding: 2rem;
+    }
+
+    @media (min-width: 426px) and (max-width: 769px) {
+        padding: 2rem;
+    }
+
+    @media (max-width: 425px) {
+        padding: 0 2rem;
+    }
 `;
 
 export const Title = styled.h2`
   font-size: 1.6rem;
   font-weight: 400;
   color: #333333;
+
+  @media (min-width: 769px) and (max-width: 1140px) {
+        padding: 2rem;
+    }
+
+    @media (min-width: 426px) and (max-width: 769px) {
+        padding: 2rem;
+    }
+
+    @media (max-width: 425px) {
+        font-size: 1.35rem;
+        padding: 2rem 0;
+    }
 `;
 
 export const ContactArea = styled.div`
@@ -27,8 +48,17 @@ export const ContactArea = styled.div`
   flex-direction: row;
   padding: 2rem;
 
-  @media (max-width: 960px) {
+  @media (min-width: 769px) and (max-width: 1140px) {
     flex-direction: column;
+  }
+
+  @media (min-width: 426px) and (max-width: 769px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    padding: 0;
   }
 `;
 
@@ -40,7 +70,15 @@ export const ContactAreaText = styled.p`
   margin-top: 3rem;
   margin-right: 1rem;
 
-  @media (max-width: 960px) {
+  @media (min-width: 769px) and (max-width: 1140px) {
+    margin: 2rem 0;
+  }
+
+  @media (min-width: 426px) and (max-width: 769px) {
+    margin: 2rem 0;
+  }
+
+  @media (max-width: 425px) {
     margin: 2rem 0;
   }
 `;

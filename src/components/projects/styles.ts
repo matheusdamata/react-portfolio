@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   height: 100%;
-  max-width: 1120px;
+  max-width: 1140px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -10,15 +10,36 @@ export const Container = styled.section`
   background-color: var(--background);
   margin: 4rem auto;
 
-  @media (max-width: 960px) {
+  @media (min-width: 769px) and (max-width: 1140px) {
         padding: 2rem;
-  }
+    }
+
+    @media (min-width: 426px) and (max-width: 769px) {
+        padding: 2rem;
+    }
+
+    @media (max-width: 425px) {
+        padding: 0 2rem;
+    }
 `;
 
 export const Title = styled.h2`
   font-size: 1.6rem;
   font-weight: 400;
   color: #333333;
+
+  @media (min-width: 769px) and (max-width: 1140px) {
+        padding: 2rem;
+    }
+
+    @media (min-width: 426px) and (max-width: 769px) {
+        padding: 2rem;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 1.35rem;
+        padding: 2rem 0;
+    }
 `;
 
 export const ProjectsArea = styled.div`
@@ -26,6 +47,10 @@ export const ProjectsArea = styled.div`
   border-radius: 50px;
   padding: 2rem;
   margin: 2rem;
+
+  @media (max-width: 425px) {
+    margin: 0;
+  }
 `;
 
 export const ProjectItem = styled.div`
@@ -33,7 +58,11 @@ export const ProjectItem = styled.div`
   flex-direction: row;
   margin-bottom: 2rem;
 
-  @media (max-width: 760px) {
+  @media (min-width: 426px) and (max-width: 769px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 425px) {
     flex-direction: column;
   }
 `;
@@ -48,8 +77,19 @@ export const ProjectItemImage = styled.img`
     transform: translate(0.2rem, 0.2rem);
   }
 
-  @media (max-width: 760px) {
+  @media (min-width: 769px) and (max-width: 1140px) {
+    width: 18.75rem;
+    height: 14rem;
+  }
+
+  @media (min-width: 426px) and (max-width: 769px) {
     width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+    height: auto;
   }
 `;
 
@@ -58,7 +98,11 @@ export const ProjectItemTextArea = styled.div`
   flex-direction: column;
   margin-left: 1.5rem;
 
-  @media (max-width: 760px) {
+  @media (min-width: 426px) and (max-width: 769px) {
+    margin: 1rem 0;
+  }
+
+  @media (max-width: 425px) {
     margin: 1rem 0;
   }
 `;
@@ -87,13 +131,22 @@ export const ProjectItemDescription = styled.p`
   font-size: 1.1rem;
   font-weight: 400;
   color: #333;
+
+  @media (max-width: 425px) {
+    font-size: 0.85rem;
+  }
 `;
 
 export const ProjectItemButtonArea = styled.div`
   display: flex;
   flex-direction: row;
 
-  @media (max-width: 760px) {
+  @media (min-width: 426px) and (max-width: 769px) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @media (max-width: 425px) {
     flex-direction: column;
     width: 100%;
   }
@@ -115,12 +168,17 @@ export const ProjectItemViewProjectButton = styled.button`
     opacity: 0.7;
   }
 
-  @media (max-width: 960px) {
+  @media (min-width: 769px) and (max-width: 1140px) {
     width: 70%;
   }
 
-  @media (max-width: 760px) {
+  @media (min-width: 426px) and (max-width: 769px) {
     width: 100%;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+    margin-right: 0;
   }
 `; 
 
@@ -140,11 +198,16 @@ export const ProjectItemViewProjectGitHubButton = styled.button`
     color: #fff;
   }
 
-  @media (max-width: 960px) {
+  @media (min-width: 769px) and (max-width: 1140px) {
     width: 30%;
   }
 
-  @media (max-width: 760px) {
+  @media (min-width: 426px) and (max-width: 769px) {
     width: 100%;
+  }
+
+  @media (max-width: 425px) {
+    width: 100%;
+
   }
 `;

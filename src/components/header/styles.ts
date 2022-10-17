@@ -14,7 +14,11 @@ export const InfoArea = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 760px) {
+  @media (min-width: 426px) and (max-width: 769px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 425px) {
     flex-direction: column;
   }
 `;
@@ -32,13 +36,25 @@ export const InfoImageArea = styled.div`
     box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
   }
 
-  @media (max-width: 760px) {
-    padding: 0;
+  @media (min-width: 426px) and (max-width: 769px) {
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
 
     img {
       width: 275px;
       height: 275px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    img {
+      width: 75%;
+      height: auto;
     }
   }
 `;
