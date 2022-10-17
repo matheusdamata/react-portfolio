@@ -1,5 +1,5 @@
-import GameStoreImage from '../assets/projects/gamestore.png';
-import QrCodeImage from '../assets/projects/qrcode.jpg';
+import GameStoreImage from '../assets/projects/gamestore.svg';
+import QrCodeImage from '../assets/projects/qrcode.svg';
 
 export type ProjectsType = {
     id: number;

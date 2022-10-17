@@ -1,6 +1,6 @@
 import * as C from './styles';
 
-import logoHeader from '../../../assets/logo.png';
+import logoHeader from '../../../assets/logo.svg';
 
 const Header = () => {
     return (  
