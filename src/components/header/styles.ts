@@ -60,13 +60,20 @@ export const InfoImageArea = styled.div`
 `;
 
 export const InfoTexts = styled.div`
+  width: 34.375rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   z-index: 5;
 
-  @media (max-width: 760px) {
+  @media (min-width: 426px) and (max-width: 769px) {
+    width: auto;
+    padding: 2rem;
+  }
+
+  @media (max-width: 425px) {
+    width: auto;
     padding: 2rem;
   }
 `;
@@ -87,6 +94,10 @@ export const InfoHeroDescription = styled.h1`
 
   span {
     color: var(--purple-dark);
+  }
+
+  @media (max-width: 425px) {
+    font-size: 1.8rem;
   }
 `;
 

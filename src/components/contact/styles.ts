@@ -20,6 +20,7 @@ export const Container = styled.section`
 
     @media (max-width: 425px) {
         padding: 0 2rem;
+        margin: 0 0 2rem 0;
     }
 `;
 
@@ -79,7 +80,7 @@ export const ContactAreaText = styled.p`
   }
 
   @media (max-width: 425px) {
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
   }
 `;
 
