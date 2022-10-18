@@ -1,7 +1,7 @@
 {
   "name": "react-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.5",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,14 +13,12 @@
     "@splinetool/runtime": "^0.9.116",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-lazy-load-image-component": "^1.5.5",
     "react-type-animation": "^2.1.1",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
-    "@types/react-lazy-load-image-component": "^1.5.2",
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^2.1.0",
     "autoprefixer": "^10.4.12",
