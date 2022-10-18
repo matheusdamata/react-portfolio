@@ -1,25 +1,25 @@
 import HeaderMenu from './header-menu';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadComponent  } from 'react-lazy-load-image-component';
 
 import * as C from "./styles";
 
 import ProfileImage from '../../assets/profile.svg';
 
 const About = () => {
+  const loadingLazy = () => {
+    console.log('Carregou')
+  }
+
   return (
     <C.Container id="app">
       <HeaderMenu />
 
       <C.InfoArea className="progressive">
-        <C.InfoImageArea>
-          <LazyLoadImage 
-            effect='blur'
-            src={ProfileImage} 
-            alt='Profile image'
-            width={350} 
-            height={350} 
-          />
-        </C.InfoImageArea>
+        <LazyLoadComponent delayMethod="debounce" beforeLoad={loadingLazy} delayTime={5000}>
+          <C.InfoImageArea>
+            <img className="preview lazy" src={ProfileImage} alt="Profile image" width={350} height={350} />
+          </C.InfoImageArea>
+        </LazyLoadComponent>
         
         <C.InfoTexts>
             <C.InfoGreeting>Olá! Eu sou</C.InfoGreeting>
