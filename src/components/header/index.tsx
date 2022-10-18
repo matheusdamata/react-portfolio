@@ -5,10 +5,6 @@ import * as C from "./styles";
 import ProfileImage from "../../assets/profile.svg";
 
 const About = () => {
-  const loadingLazy = () => {
-    console.log("Carregou");
-  };
-
   return (
     <C.Container id="app">
       <HeaderMenu />
@@ -16,7 +12,6 @@ const About = () => {
       <C.InfoArea>
         <C.InfoImageArea>
           <img
-            className="preview lazy"
             src={ProfileImage}
             alt="Profile image"
             width={350}
