@@ -51,8 +51,7 @@ export const InfoImageArea = styled.div`
     padding: 2rem;
 
     img {
-      width: 75%;
-      height: auto;
+      display: none;
     }
   }
 `;
