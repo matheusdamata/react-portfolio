@@ -68,8 +68,6 @@ export const ProjectItem = styled.div`
 `;
 
 export const ProjectItemImage = styled.img`
-  width: 21.875rem;
-  height: auto;
   border-radius: 1rem;
   transition: transform 0.8s;
 

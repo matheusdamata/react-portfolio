@@ -30,8 +30,6 @@ export const InfoImageArea = styled.div`
   padding: 5rem;
 
   img {
-    width: 350px;
-    height: 350px;
     border-radius: 50%;
     box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
   }

@@ -22,7 +22,7 @@ const Projects = () => {
             <C.ProjectsArea>
                 {projectsData.map((item, index) => (
                     <C.ProjectItem key={index}>
-                        <C.ProjectItemImage src={item.imageUrl} alt="Project image" />
+                        <C.ProjectItemImage src={item.imageUrl} alt="Project image" width={350} height={255} />
 
                         <C.ProjectItemTextArea>
                             <C.ProjectItemText>{item.title}</C.ProjectItemText>

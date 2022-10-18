@@ -10,7 +10,7 @@ const About = () => {
 
       <C.InfoArea>
         <C.InfoImageArea>
-          <img src={ProfileImage} alt="Profile image" />
+          <img src={ProfileImage} alt="Profile image" width={350} height={350} />
         </C.InfoImageArea>
         
         <C.InfoTexts>

@@ -6,7 +6,7 @@ const Header = () => {
     return (  
         <C.Container>  
             <C.Nav>
-                <C.Logo src={logoHeader} alt="Logo image" />
+                <C.Logo src={logoHeader} alt="Logo image" width={130} height={26} />
                 <C.Menu>
                     <C.MenuLine isPurple={false}></C.MenuLine>
                     <C.MenuLine isPurple={true}></C.MenuLine>

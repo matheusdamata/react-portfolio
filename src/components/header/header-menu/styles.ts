@@ -39,12 +39,4 @@ export const MenuLine = styled.div<isPurpleMenuLine>`
     background-color: ${(props) => props.isPurple ? 'var(--purple-dark)' : '#333333'};
 `;
 
-export const Logo = styled.img`
-    width: 9.5rem;
-    height: auto;
-
-    @media (max-width: 425px) {
-        width: auto;
-        height: 1.875rem;
-    }
-`;
+export const Logo = styled.img``;
