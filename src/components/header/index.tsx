@@ -12,7 +12,13 @@ const About = () => {
 
       <C.InfoArea className="progressive">
         <C.InfoImageArea>
-          <LazyLoadImage src={ProfileImage} alt="Profile image" width={350} height={350} />
+          <LazyLoadImage 
+            effect='blur'
+            src={ProfileImage} 
+            alt='Profile image'
+            width={350} 
+            height={350} 
+          />
         </C.InfoImageArea>
         
         <C.InfoTexts>
