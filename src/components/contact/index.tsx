@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import { ContactType, AllContacts } from '../../helpers/Contact';
 import * as C from './styles';
 
-
-
 const Contact = () => {
     const [getContacts, setGetContacts] = useState<ContactType[]>([]);
 
     useEffect(() => { if (AllContacts.length > 0) setGetContacts(AllContacts) }, []);
+
+    const handleClickLinkedin = () => window.open('https://www.linkedin.com/in/matheus-silva-3875b1166/', '_blank', 'noopener, noreferrer');
 
     return (    
         <C.Container>
@@ -36,7 +36,7 @@ const Contact = () => {
                         }
 
                         {item.type === 'linkedin' &&
-                            <C.ContactAreaItemButton>Conversar</C.ContactAreaItemButton>
+                            <C.ContactAreaItemButton onClick={handleClickLinkedin}>Conversar</C.ContactAreaItemButton>
                         }
                     </C.ContactAreaItem>
                 ))}

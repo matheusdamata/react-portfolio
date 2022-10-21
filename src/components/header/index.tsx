@@ -1,12 +1,12 @@
-import HeaderMenu from "./header-menu";
+import HeaderMenu from './header-menu';
 
-import * as C from "./styles";
+import * as C from './styles';
 
-import ProfileImage from "../../assets/profile.svg";
+import ProfileImage from '../../assets/profile.svg';
 
 const About = () => {
   return (
-    <C.Container id="app">
+    <C.Container>
       <HeaderMenu />
 
       <C.InfoArea>
@@ -31,17 +31,14 @@ const About = () => {
         </C.InfoTexts>
       </C.InfoArea>
 
-      <C.footer>
-        <C.github href="https://github.com/matheusdamata/" target="_blank">
+      <C.Socials>
+        <C.SocialLink href="https://github.com/matheusdamata/" target="_blank">
           github
-        </C.github>
-        <C.github
-          href="https://www.linkedin.com/in/matheus-silva-3875b1166/"
-          target="_blank"
-        >
+        </C.SocialLink>
+        <C.SocialLink href="https://www.linkedin.com/in/matheus-silva-3875b1166/" target="_blank" >
           linkedin
-        </C.github>
-      </C.footer>
+        </C.SocialLink>
+      </C.Socials>
     </C.Container>
   );
 };

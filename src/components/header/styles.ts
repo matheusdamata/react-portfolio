@@ -111,37 +111,22 @@ export const InfoSmallBio = styled.p`
   }
 `;
 
-export const footer = styled.footer`
+export const Socials = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   flex-direction: row;
-  padding: 20px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  padding: 1.25rem;
 `;
 
-export const github = styled.a`
-  margin-right: 20px;
+export const SocialLink = styled.a`
+  font-size: 1rem;
+  margin-right: 1.25rem;
   color: var(--dark-linear);
   text-decoration-color: var(--purple-dark);
   text-decoration-line: underline;
-  text-decoration-style: wavy;
-  transition: 0.5s;
-
-  &:hover {
-    color: var(--purple-light);
-    font-size: 1.1rem;
-  }
-`;
-
-export const linkedin = styled.a`
-  color: var(--dark-linear);
-  text-decoration-color: var(--purple-dark);
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  transition: 0.5s;
+  text-decoration-style: solid;
+  transition: all 0.5s;
 
   &:hover {
     color: var(--purple-light);
