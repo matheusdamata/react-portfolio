@@ -43,6 +43,9 @@ export const Title = styled.h2`
 `;
 
 export const ProjectsArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--white);
   border-radius: 50px;
   padding: 2rem;
@@ -207,5 +210,15 @@ export const ProjectItemViewProjectGitHubButton = styled.button`
   @media (max-width: 425px) {
     width: 100%;
 
+  }
+`;
+
+export const OthersProjects = styled.a`
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--purple-dark);
+
+  @media (max-width: 425px) {
+    font-size: 0.85rem;
   }
 `;

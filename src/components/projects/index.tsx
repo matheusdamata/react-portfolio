@@ -36,6 +36,7 @@ const Projects = () => {
                         </C.ProjectItemTextArea>
                     </C.ProjectItem>
                 ))}
+                <C.OthersProjects href='https://github.com/matheusdamata' target='_blank'>Conferir outros projetos</C.OthersProjects>
             </C.ProjectsArea>
         </C.Container>
     );
