@@ -21,8 +21,8 @@ export const AllProjects: ProjectsType[] = [
         category: 'E-commerce',
         technology: 'ReactJS e outros',
         description: 'Projeto e-commerce "GAME STORE", no momento atual o projeto se encontra em 0.7v, com toda sua estrutura visual pronta, função de adicionar ao carrinho completa (faltando sua apresentação/listagem em um modal).',
-        deploy: 'https://mellifluous-twilight-ce002c.netlify.app/',
-        repository: ''
+        deploy: 'https://scintillating-puffpuff-280bc4.netlify.app/',
+        repository: 'https://github.com/matheusdamata/react-e-commerce'
     }, {
         id: 2,
         imageUrl: PortfolioImage,
@@ -30,7 +30,7 @@ export const AllProjects: ProjectsType[] = [
         category: 'Outros',
         technology: 'ReactJS e outros',
         description: 'Projeto Portfólio foi desenvolvido com o objetivo em ser atraente e simples, com toda sua parte interna em componentes, tornando fácil sua manuntenção.',
-        deploy: 'https://famous-elf-6d85d8.netlify.app/',
+        deploy: 'https://portfolio-matheusdamata.netlify.app/',
         repository: 'https://github.com/matheusdamata/react-portfolio'
     }, {
         id: 3,

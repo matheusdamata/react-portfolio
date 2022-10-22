@@ -7,7 +7,11 @@ export const GlobalStyle = createGlobalStyle`
         --gray-ico: #8A8A8A;
         --purple-light: #DA00FE;
         --purple-dark: #A100ED;
-        --white: #FFFFFF;
+        --white: #FFFFFF;   
+        
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -mox-osx-font-smoothing: grayscale;
     }
 
     * {
@@ -31,9 +35,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
         height: 100vh;
         background: var(--background);
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -mox-osx-font-smoothing: grayscale;
     }
 
     body, input-security, textarea, button {
