@@ -5,6 +5,8 @@ import * as C from './styles';
 import ProfileImage from '../../assets/profile.svg';
 
 const About = () => {
+  
+
   return (
     <C.Container>
       <HeaderMenu />
