@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useTransition } from 'react';
 import * as C from './styles';
 
 import { AllProjects, ProjectsType } from '../../helpers/Projects';
@@ -30,7 +30,7 @@ const Projects = () => {
                             <C.ProjectItemCategory>{item.category}</C.ProjectItemCategory>
                             <C.ProjectItemDescription>{item.description}</C.ProjectItemDescription>
                             <C.ProjectItemButtonArea>
-                                <C.ProjectItemViewProjectButton onClick={() => openProject(item.deploy)} >Ver projeto</C.ProjectItemViewProjectButton>
+                                <C.ProjectItemViewProjectButton disabled={item.deploy.length === 0} onClick={() => openProject(item.deploy)} >Ver projeto</C.ProjectItemViewProjectButton>
                                 <C.ProjectItemViewProjectGitHubButton onClick={() => openRepository(item.repository)}>Repositório</C.ProjectItemViewProjectGitHubButton>
                             </C.ProjectItemButtonArea>
                         </C.ProjectItemTextArea>

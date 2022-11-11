@@ -1,4 +1,4 @@
-import GameStoreImage from '../assets/projects/gamestore.svg';
+import CoffeeDeliveryImage from '../assets/projects/coffee-delivery.svg';
 import PortfolioImage from '../assets/projects/portfolio.svg';
 import StarbucksImage from '../assets/projects/starbucks.svg';
 
@@ -16,13 +16,13 @@ export type ProjectsType = {
 export const AllProjects: ProjectsType[] = [
     {
         id: 1,
-        imageUrl: GameStoreImage,
-        title: 'Game Store',
+        imageUrl: CoffeeDeliveryImage,
+        title: 'Coffee Delivery',
         category: 'E-commerce',
         technology: 'ReactJS e outros',
-        description: 'Projeto e-commerce "GAME STORE", no momento atual o projeto se encontra em 0.7v, com toda sua estrutura visual pronta, função de adicionar ao carrinho completa (faltando sua apresentação/listagem em um modal).',
-        deploy: 'https://scintillating-puffpuff-280bc4.netlify.app/',
-        repository: 'https://github.com/matheusdamata/react-e-commerce'
+        description: 'Nesse projeto, desenvolvemos uma aplicação para gerenciar um carrinho de compras de uma cafeteria fictícia.',
+        deploy: '',
+        repository: 'https://github.com/matheusdamata/react-coffee-delivery'
     }, {
         id: 2,
         imageUrl: PortfolioImage,
