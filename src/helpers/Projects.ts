@@ -1,5 +1,5 @@
 import CoffeeDeliveryImage from '../assets/projects/coffee-delivery.svg';
-import PortfolioImage from '../assets/projects/portfolio.svg';
+import BabyEcommerceImage from '../assets/projects/baby-ecommerce.svg';
 import StarbucksImage from '../assets/projects/starbucks.svg';
 
 export type ProjectsType = {
@@ -25,13 +25,13 @@ export const AllProjects: ProjectsType[] = [
         repository: 'https://github.com/matheusdamata/react-coffee-delivery'
     }, {
         id: 2,
-        imageUrl: PortfolioImage,
-        title: 'Portfólio',
-        category: 'Outros',
+        imageUrl: BabyEcommerceImage,
+        title: 'Baby E-commerce',
+        category: 'E-commerce',
         technology: 'ReactJS e outros',
-        description: 'Projeto Portfólio foi desenvolvido com o objetivo em ser atraente e simples, com toda sua parte interna em componentes, tornando fácil sua manuntenção.',
-        deploy: 'https://portfolio-matheusdamata.netlify.app/',
-        repository: 'https://github.com/matheusdamata/react-portfolio'
+        description: 'Projeto desenvolvido durante minhas lives diárias na Twitch, com o objetivo em aprimorar mais meus conhecimentos.',
+        deploy: '',
+        repository: 'https://github.com/matheusdamata/react-baby-shop-live'
     }, {
         id: 3,
         imageUrl: StarbucksImage,
