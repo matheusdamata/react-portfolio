@@ -71,8 +71,13 @@ export const ProjectItem = styled.div`
 `;
 
 export const ProjectItemImage = styled.img`
+  width: 350px;
+  height: 100%;
+
   border-radius: 1rem;
   transition: transform 0.8s;
+
+  object-fit: cover;
 
   &:hover {
     transform: translate(0.2rem, 0.2rem);
