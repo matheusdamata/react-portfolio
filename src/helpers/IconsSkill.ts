@@ -4,7 +4,7 @@ import JavaScriptImage from '../assets/icons/javascript.svg';
 import ReactJSImage from '../assets/icons/react.svg';
 import NodeJSImage from '../assets/icons/nodejs.svg';
 import TypescriptImage from '../assets/icons/typescript.svg';
-import SassImage from '../assets/icons/sass.svg';
+import NextJSImage from '../assets/icons/nextjs.svg';
 
 export type IconType = {
     id: number;
@@ -31,19 +31,19 @@ export const AllIconsSkills: IconType[] = [
         imageUrl: ReactJSImage
     }, {
         id: 5,
+        title: 'Next JS',
+        imageUrl: NextJSImage
+    }, {
+        id: 6,
         title: 'React Native',
         imageUrl: ReactJSImage
     }, {
-        id: 6,
+        id: 7,
         title: 'NodeJS',
         imageUrl: NodeJSImage
     }, {
-        id: 7,
+        id: 8,
         title: 'Typescript',
         imageUrl: TypescriptImage
-    }, {
-        id: 8,
-        title: 'Sass',
-        imageUrl: SassImage
-    },   
+    }
 ]

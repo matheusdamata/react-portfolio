@@ -30,6 +30,9 @@ export const InfoImageArea = styled.div`
   padding: 5rem;
 
   img {
+    width: 21.875rem;
+    height: 21.875rem;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
   }
@@ -122,14 +125,12 @@ export const Socials = styled.div`
 export const SocialLink = styled.a`
   font-size: 1rem;
   margin-right: 1.25rem;
-  color: var(--dark-linear);
-  text-decoration-color: var(--purple-dark);
-  text-decoration-line: underline;
-  text-decoration-style: solid;
+  color: var(--purple-dark);
+  text-decoration: none;
   transition: all 0.5s;
 
   &:hover {
     color: var(--purple-light);
-    font-size: 1.1rem;
+    transform: scale(1.1);
   }
 `;

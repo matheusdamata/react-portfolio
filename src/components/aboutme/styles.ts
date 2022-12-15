@@ -63,4 +63,13 @@ export const AboutMeText = styled.p`
     @media (max-width: 425px) {
         font-size: 1rem;
     }
+
+    a {
+        text-decoration: none;
+        color: var(--purple-dark);
+    }
+
+    strong {
+        color: var(--purple-dark);
+    }
 `;

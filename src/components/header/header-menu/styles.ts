@@ -18,6 +18,8 @@ export const Nav = styled.div`
     }
 `;
 
+export const Logo = styled.img``;
+
 export const Menu = styled.div`
     width: 1.875rem;
     height: 1.875rem;
@@ -38,5 +40,3 @@ export const MenuLine = styled.div<isPurpleMenuLine>`
     width: ${(props) => props.isPurple ? '2.5rem' : '2rem'};
     background-color: ${(props) => props.isPurple ? 'var(--purple-dark)' : '#333333'};
 `;
-
-export const Logo = styled.img``;
