@@ -2,7 +2,7 @@ import HeaderMenu from './header-menu';
 
 import * as C from './styles';
 
-import ProfileImage from '../../assets/profile.svg';
+import ProfileImage from '../../assets/profile-v2.svg';
 
 const About = () => {
   
