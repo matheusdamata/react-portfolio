@@ -5,6 +5,10 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     background-color: var(--background);
+
+    @media (max-width: 425px) {
+        display: none;
+    }
 `;
 
 export const Nav = styled.div`
