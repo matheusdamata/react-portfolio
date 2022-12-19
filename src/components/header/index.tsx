@@ -1,10 +1,19 @@
+import { useEffect, useState } from 'react';
+
 import HeaderMenu from './header-menu';
 
 import * as C from './styles';
+import Skeleton from 'react-loading-skeleton';
 
 import ProfileImage from '../../assets/profile-v2.svg';
 
 const About = () => {
+  const [isLoading, setIsLoading] = useState(false)
+
+  useEffect(() => {
+    setIsLoading(true)
+    setTimeout(() => setIsLoading(false), 500)
+  }, [])
   
 
   return (
@@ -13,12 +22,16 @@ const About = () => {
 
       <C.InfoArea>
         <C.InfoImageArea>
-          <img
+          {isLoading ? (
+            <Skeleton circle width={350} height={350} />
+          ) : (
+            <img
             src={ProfileImage}
             alt="Profile image"
             width={350}
             height={350}
-          />
+            />
+          )}
         </C.InfoImageArea>
 
         <C.InfoTexts>
