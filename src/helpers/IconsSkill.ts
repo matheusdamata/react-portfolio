@@ -5,6 +5,7 @@ import ReactJSImage from '../assets/icons/react.svg';
 import NodeJSImage from '../assets/icons/nodejs.svg';
 import TypescriptImage from '../assets/icons/typescript.svg';
 import NextJSImage from '../assets/icons/nextjs.svg';
+import PhotoShopImage from '../assets/icons/photoshop.svg';
 
 export type IconType = {
     id: number;
@@ -35,8 +36,8 @@ export const AllIconsSkills: IconType[] = [
         imageUrl: NextJSImage
     }, {
         id: 6,
-        title: 'React Native',
-        imageUrl: ReactJSImage
+        title: 'Photoshop',
+        imageUrl: PhotoShopImage
     }, {
         id: 7,
         title: 'NodeJS',
